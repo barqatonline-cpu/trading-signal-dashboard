@@ -873,8 +873,8 @@
     <script src="https://s3.tradingview.com/tv.js"></script>
     <script>
         // ─── 🔐 CHANGE YOUR USER ID & PASSWORD HERE ───
-        const CRED_EMAIL = "finorix-lifetime@gmail.com";   // <-- अपना Email ID डालें
-        const CRED_PASS = "FinorixV11Lifetime";            // <-- अपना Password डालें
+        const CRED_EMAIL = "finorix-bot@gmai.com";   // <-- अपना Email ID डालें
+        const CRED_PASS = "FinorixbotLifetime";            // <-- अपना Password डालें
         // ────────────────────────────────────────────────
 
         // ─── CONSTANTS ───
