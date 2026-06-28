@@ -6,7 +6,7 @@
     <title>FINORIX V 12.5 · ULTIMATE AI ENGINE</title>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Oxanium:wght@300;400;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
-        /* --- Base styles (same as before, with minor additions) --- */
+        /* ─── Complete Styles (same as previous) ─── */
         * {
             margin: 0;
             padding: 0;
@@ -281,11 +281,8 @@
             display: inline-block;
         }
         @keyframes dotPulse {
-            0%,
-            100% { opacity: 1;
-                transform: scale(1); }
-            50% { opacity: 0.3;
-                transform: scale(0.7); }
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(0.7); }
         }
         .logout-btn {
             background: transparent;
@@ -528,10 +525,8 @@
             padding-bottom: 4px;
             margin-bottom: 4px;
         }
-        .val-bullish { color: var(--green);
-            text-shadow: 0 0 10px var(--green-glow); }
-        .val-bearish { color: var(--red);
-            text-shadow: 0 0 10px var(--red-glow); }
+        .val-bullish { color: var(--green); text-shadow: 0 0 10px var(--green-glow); }
+        .val-bearish { color: var(--red); text-shadow: 0 0 10px var(--red-glow); }
         .val-neutral { color: var(--text-muted); }
         .analysis-row .label {
             color: var(--text-muted);
@@ -641,100 +636,16 @@
             animation: dp 1.8s ease-in-out infinite;
         }
         @keyframes dp {
-            0%, 100% { opacity: 1;
-                transform: scale(1); }
-            50% { opacity: 0.2;
-                transform: scale(0.5); }
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.2; transform: scale(0.5); }
         }
-        .a-cg { color: #10a37f;
-            border-color: rgba(16, 163, 127, 0.3); }
-        .a-gk { color: #c0c0d8;
-            border-color: rgba(192, 192, 216, 0.18); }
-        .a-cl { color: #e08b30;
-            border-color: rgba(224, 139, 48, 0.3); }
-        .a-gm { color: #4285f4;
-            border-color: rgba(66, 133, 244, 0.3); }
-        .a-ll { color: var(--purple);
-            border-color: rgba(168, 85, 247, 0.3); }
-        .a-bm { color: var(--gold);
-            border-color: rgba(255, 179, 0, 0.3); }
-        /* Responsive */
-        @media (max-width: 920px) {
-            #dashboard-container { width: 100%;
-                padding: 10px; }
-            .header { justify-content: center;
-                text-align: center;
-                gap: 10px; }
-            .header-title { font-size: 18px; }
-            .logo-img { height: 36px; }
-            .main-grid { display: flex;
-                flex-direction: column;
-                height: auto;
-                gap: 12px; }
-            .area-chart { order: 1;
-                height: 360px; }
-            .area-signal { order: 2; }
-            .area-assets { order: 3; }
-            .area-trade { order: 4; }
-            .area-analysis { order: 5; }
-            .panel-signal { flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                padding: 12px; }
-            .confidence-section { width: auto;
-                border: none;
-                padding: 0; }
-            .signal-icon-box { margin: 4px;
-                width: 64px;
-                height: 64px;
-                font-size: 44px; }
-            .logout-btn { top: 8px;
-                right: 8px;
-                position: fixed;
-                z-index: 999;
-                background: rgba(0, 0, 0, 0.8);
-                font-size: 11px;
-                padding: 3px 10px; }
-            #auth-container { padding: 24px 18px;
-                width: 94%; }
-            .auth-title { font-size: 20px; }
-            .accuracy-badge { font-size: 12px;
-                padding: 3px 10px; }
-            .panel { padding: 10px 12px; }
-            .timer-display { font-size: 18px; }
-            .signal-text { font-size: 20px; }
-            .conf-value { font-size: 18px; }
-        }
-        @media (max-width: 480px) {
-            .header-title { font-size: 15px;
-                letter-spacing: 1px; }
-            .header-brand { font-size: 10px; }
-            .logo-img { height: 30px; }
-            .area-chart { height: 280px; }
-            .panel-signal { padding: 8px;
-                gap: 4px; }
-            .signal-icon-box { width: 54px;
-                height: 54px;
-                font-size: 36px; }
-            .signal-text { font-size: 17px; }
-            .signal-asset-text { font-size: 12px; }
-            .btn-trade-now { font-size: 14px;
-                height: 40px; }
-            .timer-display { font-size: 15px;
-                gap: 6px; }
-            .arc-wrapper { width: 70px;
-                height: 36px; }
-            .arc { width: 56px;
-                height: 56px;
-                border-width: 5px; }
-            .conf-value { font-size: 16px; }
-            .custom-asset-select { font-size: 13px;
-                padding: 8px 10px; }
-            .market-btn { font-size: 11px;
-                padding: 6px 2px; }
-            .analysis-row { font-size: 13px; }
-        }
-        /* Settings panel (simple expandable) */
+        .a-cg { color: #10a37f; border-color: rgba(16, 163, 127, 0.3); }
+        .a-gk { color: #c0c0d8; border-color: rgba(192, 192, 216, 0.18); }
+        .a-cl { color: #e08b30; border-color: rgba(224, 139, 48, 0.3); }
+        .a-gm { color: #4285f4; border-color: rgba(66, 133, 244, 0.3); }
+        .a-ll { color: var(--purple); border-color: rgba(168, 85, 247, 0.3); }
+        .a-bm { color: var(--gold); border-color: rgba(255, 179, 0, 0.3); }
+        /* Settings */
         .settings-toggle {
             cursor: pointer;
             color: var(--text-muted);
@@ -777,6 +688,48 @@
         }
         .setting-row label {
             color: var(--text-muted);
+        }
+        /* Responsive */
+        @media (max-width: 920px) {
+            #dashboard-container { width: 100%; padding: 10px; }
+            .header { justify-content: center; text-align: center; gap: 10px; }
+            .header-title { font-size: 18px; }
+            .logo-img { height: 36px; }
+            .main-grid { display: flex; flex-direction: column; height: auto; gap: 12px; }
+            .area-chart { order: 1; height: 360px; }
+            .area-signal { order: 2; }
+            .area-assets { order: 3; }
+            .area-trade { order: 4; }
+            .area-analysis { order: 5; }
+            .panel-signal { flex-direction: row; flex-wrap: wrap; justify-content: space-around; padding: 12px; }
+            .confidence-section { width: auto; border: none; padding: 0; }
+            .signal-icon-box { margin: 4px; width: 64px; height: 64px; font-size: 44px; }
+            .logout-btn { top: 8px; right: 8px; position: fixed; z-index: 999; background: rgba(0,0,0,0.8); font-size: 11px; padding: 3px 10px; }
+            #auth-container { padding: 24px 18px; width: 94%; }
+            .auth-title { font-size: 20px; }
+            .accuracy-badge { font-size: 12px; padding: 3px 10px; }
+            .panel { padding: 10px 12px; }
+            .timer-display { font-size: 18px; }
+            .signal-text { font-size: 20px; }
+            .conf-value { font-size: 18px; }
+        }
+        @media (max-width: 480px) {
+            .header-title { font-size: 15px; letter-spacing: 1px; }
+            .header-brand { font-size: 10px; }
+            .logo-img { height: 30px; }
+            .area-chart { height: 280px; }
+            .panel-signal { padding: 8px; gap: 4px; }
+            .signal-icon-box { width: 54px; height: 54px; font-size: 36px; }
+            .signal-text { font-size: 17px; }
+            .signal-asset-text { font-size: 12px; }
+            .btn-trade-now { font-size: 14px; height: 40px; }
+            .timer-display { font-size: 15px; gap: 6px; }
+            .arc-wrapper { width: 70px; height: 36px; }
+            .arc { width: 56px; height: 56px; border-width: 5px; }
+            .conf-value { font-size: 16px; }
+            .custom-asset-select { font-size: 13px; padding: 8px 10px; }
+            .market-btn { font-size: 11px; padding: 6px 2px; }
+            .analysis-row { font-size: 13px; }
         }
     </style>
 </head>
@@ -919,7 +872,12 @@
 
     <script src="https://s3.tradingview.com/tv.js"></script>
     <script>
-        // ─── CONFIG ───
+        // ─── 🔐 CHANGE YOUR USER ID & PASSWORD HERE ───
+        const CRED_EMAIL = "finorix-lifetime@gmail.com";   // <-- अपना Email ID डालें
+        const CRED_PASS = "FinorixV11Lifetime";            // <-- अपना Password डालें
+        // ────────────────────────────────────────────────
+
+        // ─── CONSTANTS ───
         const PAIRS = ["EURUSD", "GBPUSD", "USDJPY", "AUDUSD", "USDCAD", "USDCHF", "EURGBP", "EURJPY", "GBPJPY", "AUDJPY",
             "GBPAUD", "CADJPY", "EURCAD", "EURAUD", "GBPCAD", "CHFJPY", "EURCHF", "GBPCHF"
         ];
@@ -947,9 +905,7 @@
             reentry: true,
             voice: true
         };
-        // Backtesting data
-        let signalHistory = [];
-        const MAX_HISTORY = 50;
+        let pairStats = {};
 
         // TF Config with weights
         const TF_CFG = {
@@ -996,9 +952,6 @@
         const totalSignalsLabel = $('total-signals-label');
 
         // ─── AUTH ───
-        const CRED_EMAIL = "finorix-softwere.com";
-        const CRED_PASS = "Finorix-botlifetime";
-
         function toggleAuthMode() {
             isSignupMode = !isSignupMode;
             authTitle.innerHTML = isSignupMode ?
@@ -1176,12 +1129,11 @@
 
             const cfg = TF_CFG[selectedTF] || TF_CFG[1];
             const isOTC = marketType === 'OTC';
-            // Dynamic weight adjustment based on volatility (ATR-like)
-            const vol = sr(seed + 99) * 0.8 + 0.2; // 0.2 to 1.0
+            // Dynamic weight adjustment based on volatility
+            const vol = sr(seed + 99) * 0.8 + 0.2;
             const isTrending = vol > 0.55;
             const weightScale = (ind) => {
                 if (isOTC) {
-                    // OTC: give more weight to range-bound indicators
                     if (['rsi', 'bb', 'stoch'].includes(ind)) return 1.3;
                     if (['macd', 'ema', 'ichi'].includes(ind)) return 0.8;
                 }
@@ -1194,12 +1146,11 @@
 
             // ── RSI ──
             const rsiVal = 15 + sr(seed + 1) * 70;
-            let rsiSig = 0,
-                rsiConf = false;
-            if (rsiVal < cfg.rsiOS) { rsiSig = 1;
-                rsiConf = rsiVal < cfg.rsiOS - 5; } else if (rsiVal > cfg.rsiOB) { rsiSig = -1;
-                rsiConf = rsiVal > cfg.rsiOB + 5; } else if (rsiVal < 45) { rsiSig = 1; } else if (rsiVal > 55) { rsiSig =
-                    -1; }
+            let rsiSig = 0, rsiConf = false;
+            if (rsiVal < cfg.rsiOS) { rsiSig = 1; rsiConf = rsiVal < cfg.rsiOS - 5; }
+            else if (rsiVal > cfg.rsiOB) { rsiSig = -1; rsiConf = rsiVal > cfg.rsiOB + 5; }
+            else if (rsiVal < 45) { rsiSig = 1; }
+            else if (rsiVal > 55) { rsiSig = -1; }
 
             // ── MACD ──
             const macdLine = (sr(seed + 2) - 0.5) * 3;
@@ -1257,9 +1208,8 @@
             const fibSig = fibRand > 0.5 ? 1 : -1;
             const fibConf = Math.abs(fibRand - 0.5) > 0.3;
 
-            // ── MTF (higher TF trend) ──
-            let mtfDir = 0,
-                mtfConf = 0;
+            // ── MTF ──
+            let mtfDir = 0, mtfConf = 0;
             if (settings.mtf) {
                 const higherSeed = seed + 1000;
                 const hTrend = sr(higherSeed + 1);
@@ -1272,7 +1222,6 @@
             const inds = [];
             const w = cfg.w;
 
-            // Apply dynamic weights
             const rsiW = w.rsi * weightScale('rsi');
             const macdW = w.macd * weightScale('macd');
             const emaW = w.ema * weightScale('ema');
@@ -1315,14 +1264,12 @@
             score += fibSig * fibW * (fibConf ? 1 : 0.6);
             inds.push({ n: 'Fibonacci', s: fibSig, conf: fibConf });
 
-            // MTF adjustment
             if (settings.mtf && mtfDir !== 0) {
                 const mtfFactor = mtfConf * 1.5;
                 score += mtfDir * mtfFactor;
                 inds.push({ n: 'MTF Trend', s: mtfDir, conf: mtfConf > 0.5 });
             }
 
-            // ── FINAL DIRECTION ──
             let rawDir = score > 0 ? 1 : -1;
             if (csSpread > 30 && rawDir !== csDir) rawDir = csDir;
             const isUp = rawDir > 0;
@@ -1331,37 +1278,32 @@
             const confirming = inds.filter(i => i.s === dir);
             const confRate = confirming.length / inds.length;
             let qual = Math.min(99, Math.round(55 + (confRate * 44)));
-            // Boost for MTF alignment
             if (settings.mtf && mtfDir === dir) qual = Math.min(99, qual + 5);
-            // Penalize if high volatility and low trend confirmation
             if (isTrending && confRate < 0.5) qual = Math.max(50, qual - 10);
 
-            // ── BLOCK GATE ──
-            const minConf = { 1: 5, 2: 5, 3: 6, 5: 6 }; // increased for more accuracy
+            const minConf = { 1: 5, 2: 5, 3: 6, 5: 6 };
             const needed = minConf[selectedTF] || 5;
             const blocked = confirming.length < needed || qual < 70;
 
-            // ── VOLATILITY ──
             const volLabel = vol > 0.65 ? 'HIGH' : vol > 0.4 ? 'MEDIUM' : 'LOW';
 
             return {
-                blocked: blocked,
-                isUp: isUp,
-                qual: qual,
+                blocked,
+                isUp,
+                qual,
                 rsi: Math.round(rsiVal),
                 csSpread: Math.round(csSpread),
-                csDir: csDir,
-                c1: c1,
-                c2: c2,
+                csDir,
+                c1, c2,
                 v1: Math.round(v1),
                 v2: Math.round(v2),
-                confirming: confirming,
+                confirming,
                 total: inds.length,
-                snrLabel: snrLabel,
-                paLabel: paLabel,
+                snrLabel,
+                paLabel,
                 vol: volLabel,
                 trend: isUp ? 'BULLISH' : 'BEARISH',
-                mtfDir: mtfDir
+                mtfDir
             };
         }
 
@@ -1438,7 +1380,6 @@
             analysisAIConf.style.color = color;
             analysisCS.textContent = result.csSpread + 'pts';
 
-            // Risk suggestion
             let risk = '--';
             if (result.qual >= 85) risk = '2% (High)';
             else if (result.qual >= 75) risk = '1.5% (Medium)';
@@ -1449,7 +1390,7 @@
             signalStatus.textContent = '● ' + (isUp ? 'CALL' : 'PUT');
             signalStatus.style.color = color;
 
-            // Update accuracy tracking (simulated)
+            // Accuracy tracking
             totalSignals++;
             const predictedCorrect = result.qual > 75 ? Math.random() < 0.95 : Math.random() < 0.82;
             if (predictedCorrect) correctSignals++;
@@ -1457,10 +1398,9 @@
             displayedAccuracy = Math.max(88, Math.min(99, acc));
             sysAccuracy.textContent = displayedAccuracy + '%';
 
-            // Update best pair label (simple: track per pair)
+            // Best pair
             updateBestPair();
 
-            // Voice alert
             if (settings.voice) {
                 try {
                     const u = new SpeechSynthesisUtterance(isUp ? 'Call signal. Enter now.' : 'Put signal. Enter now.');
@@ -1470,18 +1410,13 @@
                 } catch (e) {}
             }
 
-            // Start expiry
             startExpiry(selectedTF * 60, isUp);
         }
-
-        // ─── BEST PAIR TRACKING ───
-        let pairStats = {};
 
         function updateBestPair() {
             const p = currentSymbol;
             if (!pairStats[p]) pairStats[p] = { total: 0, wins: 0 };
             pairStats[p].total++;
-            // Simulate win based on confidence
             const lastQual = parseInt(confidenceVal.textContent) || 70;
             if (lastQual > 70 && Math.random() < 0.85) pairStats[p].wins++;
             let bestPair = '';
@@ -1489,8 +1424,7 @@
             for (const [pair, stat] of Object.entries(pairStats)) {
                 if (stat.total >= 3) {
                     const rate = stat.wins / stat.total;
-                    if (rate > bestRate) { bestRate = rate;
-                        bestPair = pair; }
+                    if (rate > bestRate) { bestRate = rate; bestPair = pair; }
                 }
             }
             bestPairLabel.textContent = bestPair ? 'Best: ' + bestPair + ' (' + Math.round(bestRate * 100) + '%)' :
@@ -1518,7 +1452,6 @@
                     btnGenerate.disabled = false;
                     btnGenerate.innerText = '⚡ GENERATE SIGNAL';
                     signalStatus.textContent = '● EXPIRED';
-                    // Auto re-entry if enabled
                     if (settings.reentry && !isGenerating) {
                         setTimeout(() => {
                             if (!signalActive && !isGenerating) {
@@ -1624,7 +1557,6 @@
                 btnGenerate.innerText = '⚡ GENERATE SIGNAL';
                 signalStatus.textContent = '● IDLE';
             };
-            // Init settings
             updateSettings();
         }
 
@@ -1640,7 +1572,7 @@
             }
         });
 
-        // ─── BG PARTICLES ─── (same as before)
+        // ─── BG PARTICLES ───
         (function() {
             const canvas = document.getElementById('bg-canvas');
             const ctx = canvas.getContext('2d');
@@ -1685,8 +1617,7 @@
 
             function animate() {
                 ctx.clearRect(0, 0, w, h);
-                particles.forEach(p => { p.update();
-                    p.draw(); });
+                particles.forEach(p => { p.update(); p.draw(); });
                 requestAnimationFrame(animate);
             }
             animate();
